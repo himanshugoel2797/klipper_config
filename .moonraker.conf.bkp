@@ -28,7 +28,7 @@ trusted_clients =
 
 [announcements]
 subscriptions = 
-	mainsail
+	octoapp.
 
 [update_manager]
 refresh_interval = 168
@@ -96,4 +96,15 @@ managed_services = klipper
 
 [mmu_server]
 enable_file_preprocessor = True
+
+[update_manager octoapp]
+type = git_repo
+channel = beta
+path = /home/pi/octoapp
+origin = https://github.com/QuinnDamerell/OctoPrint-OctoApp.git
+env = /home/pi/octoapp-env/bin/python
+requirements = requirements.txt
+install_script = install.sh
+managed_services = 
+	octoapp
 
