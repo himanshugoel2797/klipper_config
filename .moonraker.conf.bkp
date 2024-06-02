@@ -80,13 +80,6 @@ origin = https://github.com/ZeroGDesign/zerog-mainsail-theme.git
 install_script = install.sh
 is_system_service = False
 
-[update_manager z_calibration]
-type = git_repo
-path = ~/klipper_z_calibration
-origin = https://github.com/protoloft/klipper_z_calibration.git
-install_script = install.sh
-managed_services = klipper
-
 [update_manager happy-hare]
 type = git_repo
 path = ~/Happy-Hare
