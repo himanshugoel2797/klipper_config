@@ -8,7 +8,7 @@ klippy_uds_address = ~/printer_data/comms/klippy.sock
 enable_object_processing = True
 
 [authorization]
-force_logins = True
+force_logins = False
 cors_domains = 
 	https://my.mainsail.xyz
 	http://my.mainsail.xyz
